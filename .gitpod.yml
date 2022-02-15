@@ -1,0 +1,5 @@
+tasks:
+  - init: |
+      npm i -g http-server
+    command: |
+      http-server

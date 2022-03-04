@@ -1,8 +1,8 @@
 const fs = require('fs')
 try {
-    const guesses = ['badge','','','','','']
-    const hardMode = false
-    const useAnswers = false
+    const guesses = ['','','','','','']
+    const hardMode = true
+    const useAnswers = true
     const showWhen = true
     const showWhenIsDate = true
     const showScores = true

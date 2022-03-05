@@ -1166,7 +1166,9 @@ this.wordle.bundle = function(e) {
     function Ba(e, a) {
         var s = new Date(e)
           , t = new Date(a).setHours(0, 0, 0, 0) - s.setHours(0, 0, 0, 0);
-        return Math.round(t / 864e5)
+        const urlParams = new URLSearchParams(window.location.search);
+        const wordle = urlParams.get('wordle');
+        return wordle?wordle:Math.round(t / 864e5)
     }
     function Va(e) {
         var a, s = Fa(e);
